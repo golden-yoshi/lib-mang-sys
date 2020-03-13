@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="controller.AddPatronController" xmlns:fx="http://javafx.com/fxml"  alignment="center" spacing="10">
+<GridPane hgap="10" vgap="10" >
+    <Label text="Patron ID:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="IDTf" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Label text="Patron Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="nameTf" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+</GridPane>
+    <Text fx:id="addPatronTxt" />
+        <Button text="Add Patron" onAction="#handleAddPatron"/>
+        <Button text="Close" onAction="#handleClose"/>
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</VBox>

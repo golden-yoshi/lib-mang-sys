@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<?import javafx.scene.image.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.AdminController" alignment="center" spacing="10" styleClass="root">
+    <HBox spacing="10">
+        <ImageView> <image> <Image url="@UTS-logo.jpg"/> </image> </ImageView>
+        <Text styleClass="heading" text="${'Library\nManagement\nSystem'}"/> 
+        <!-- \n creates a new line for each word -->
+    </HBox>
+    <Button fx:id="addPatronBtn" text="Add Patron" onAction="#handleAddPatron"/>
+    <Button fx:id="removePatronBtn" text="Remove Patron" onAction="#handleRemovePatron"/>
+    <Button fx:id="addBookBtn" text="Add Book to Catalogue" onAction="#handleAddBook"/>
+    <Button fx:id="removeBookBtn" text="Remove Book from Catalogue" onAction="#handleRemoveBook"/>
+    <Button fx:id="closeBtn" text="Close Administration Menu" onAction="#handleClose"/>
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</VBox>

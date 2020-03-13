@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.ShowAllBooksController" alignment="center" spacing="10" styleClass="root">
+    <TableView fx:id="booksTv" items="${controller.catalogue.allBooks}">
+        <placeholder> <Label text="No Books in Catalogue" /> </placeholder>
+        <columns>
+            <TableColumn fx:id="titleClm" text="Title">
+                <cellValueFactory> 
+                    <PropertyValueFactory property="title"/> <!-- \n creates a new line for each word -->
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="authorClm" text="Author" >
+                <cellValueFactory> 
+                    <PropertyValueFactory property="author"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="genreClm" text="Genre" >
+                <cellValueFactory> 
+                    <PropertyValueFactory property="genre"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <Button fx:id="closeBtn" text="Close" onAction="#handleClose"/>
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</VBox>

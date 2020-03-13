@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Vendor: 133145
+JavaFX-Version: 8.0
+Implementation-Title: 48024 Assignment 2 (library2)
+Implementation-Version: 1.0
+X-COMMENT: Main-Class will be added automatically by build
+Class-Path: 
+Permissions: sandbox
+Created-By: JavaFX Packager
+Main-Class: LibraryApplication
+Codebase: *
+
